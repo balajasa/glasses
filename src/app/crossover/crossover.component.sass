@@ -1,0 +1,177 @@
+@import 'variable.sass'
+@import 'color.sass'
+@import 'mixin.sass'
+
+.crossover
+    // padding-bottom: 80px    
+
+.container
+    max-width: 100%
+    background: url(/assets/img/nic-visuals.png) 
+    background-repeat: no-repeat
+    padding: 64px    
+    position: relative
+
+.crossover-title
+    @include fontMid( 48px )    
+    color: #ffffff
+    text-align: center
+    margin-bottom: 60px
+
+.crossover-row
+    display: flex
+    // flex-wrap: wrap    
+    justify-content: center
+
+.crossover-row img    
+    margin-left: 0
+    max-width: 100%
+    height: auto
+    
+
+.col-8--right
+    margin-left: 8px
+    @include pad    
+        margin-left: 3px
+
+.crossover-item
+    margin-top: 6px
+    position: relative
+    @include pad    
+        margin-top: 0px
+
+.crossover-pic
+    margin-left: 8px
+    @include pad    
+        margin-left: 3px
+        z-index: 2
+
+.crossover-more
+    margin-top: 8px
+    position: absolute
+    right: 78px
+    bottom: 0
+    // max-width: 100%
+    @include pad    
+        margin-top: 1px
+        margin-left: 3px
+        right: 56px
+        // bottom: 0
+        width: 130px
+        // height: 27px
+        z-index: 0
+
+
+.more-text
+    background-color: #fff
+    display: flex
+    position: absolute
+    right: 0
+    bottom: 32px
+    z-index: 3
+    padding: 16px 22px
+    @include pad 
+        padding: 8px 10px
+        bottom: 12px
+        
+
+.more-text p
+    @include fontSec( 72px )
+    font-weight: bold
+    color: $color-primary    
+    margin-right: 16px
+    @include pad
+        @include fontSec( 40px )
+
+.more-text img
+    max-width: 100%
+    height: auto  
+    @include pad
+        width: 28px
+
+.crossover-mid
+    margin-top: 60px
+    position: relative
+    margin-right: 30px
+    &:last-child
+        margin-right: 0
+    @include pad
+    margin-top: 40px
+        margin-right: 24px
+    
+.crossover-mid span
+    @include fontSec( 72px ) 
+    font-weight: bold
+    position: absolute
+    top: 46%
+    left: 25%
+    z-index: 3
+    @include pad
+        @include fontSec( 40px )
+
+.crossover-mid::after
+    content: ""
+    position: absolute
+    background-color: #fff
+    display: block
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    opacity: 0.5
+
+// 顧客推薦    
+.content
+    width: 100%
+    max-width: 1140px
+    margin-right: auto
+    margin-left: auto
+    margin-top: 144px
+    @include pad
+        margin-top: 40px
+
+.recommed-title
+    @include fontMid( 48px )    
+    color: #ffffff
+    text-align: center
+    margin-bottom: 60px   
+    @include pad
+        margin-bottom: 32px  
+
+.recommed-list
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
+
+
+.card
+    width: 24.5%
+    background-color: #fff
+    @include pad
+        width: 48%
+        max-width: 100%
+        margin-bottom: 24px
+
+.card-content
+    max-width: 100%
+    line-height: 1.5 
+    border: 1px solid #DEE2E6
+    padding: 16px
+    margin-top: -2px 
+
+.card-title
+    @include fontSec ( 16px )    
+    color: #212529
+    font-weight: bold
+
+.card-text
+    @include fontSec ( 16px )
+    color: #212529
+    margin-top: 16px
+
+.card-footer
+    @include fontSec ( 16px )
+    color: #707070        
+    margin-top: 16px

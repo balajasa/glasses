@@ -1,0 +1,59 @@
+@import 'variable.sass'
+@import 'color.sass'
+@import 'mixin.sass'
+
+.call
+    background-color: #AA06010D
+    // height: 900px
+    padding: 64px
+    margin-right: auto
+    margin-left: auto
+    @include pad
+        padding: 40px 135px
+
+.container
+    max-width: 792px
+    width: 100%
+
+.call-title
+    @include fontMid( 48px )    
+    color: #000000    
+    text-align: center
+
+.form-title
+    font-size: 20px
+    margin-top: 24px    
+    margin-bottom: 20px
+    line-height: 1.5
+    text-align: left
+
+.forminput
+    outline: none
+    width: 100%
+    background-color: transparent
+    border-style: none
+    border: 1px solid #000
+    padding: 14px 16px    
+    margin: 4px 0 16px 0
+
+.formcheck
+    outline: none
+    width: 100%
+    background-color: transparent
+    border-style: none
+    // padding: 14px 16px    
+    // margin: 4px 0 16px 42px    
+.formcheck input
+    margin-right: 4px
+    border: 1px solid #000000
+
+.submit
+    background: $color-primary
+    color: #ffffff
+    border: none
+    padding: 16px 52px
+
+.btn
+    margin-top: 42px
+    text-align: center     
+    // margin-bottom: 92px

@@ -1,0 +1,97 @@
+@import 'variable.sass'
+@import 'color.sass'
+@import 'mixin.sass'
+
+.footer
+    background: $color-primary
+    color: #ffffff
+
+.container
+    // width: 100%
+    max-width: 1140px
+    margin-right: auto
+    margin-left: auto
+    padding: 48px
+
+.footer-box
+    display: flex
+    flex-wrap: wrap
+
+.footer-box--left 
+    width: calc( 100% / 12 * 9 )
+
+.footer-box--right
+    width: calc( 100% / 12 * 3 )
+
+.footer-list
+    display: flex
+    align-items: center
+
+.footer-list li
+    margin-right: 48px   
+    @include pad
+        margin-right: 40px
+
+.phone
+    display: flex
+    margin-top: 32px
+    align-items: center
+    @include pad
+        margin-top: 12px
+        width: 32px
+
+    & p
+        font-size: 36px
+        margin-left: 12px
+        @include pad
+            font-size: 20px
+
+.mail
+    display: flex
+    margin-top: 32px
+    align-items: center
+    @include pad
+        margin-top: 12px
+        width: 32px
+    & p
+        font-size: 36px
+        margin-left: 12px  
+        @include pad
+            font-size: 20px      
+
+.icon-list
+    display: flex
+    justify-content: flex-end    
+
+.icon-list li
+    margin-left: 32px    
+    @include pad
+        margin-left: 24px
+
+.fotter-bottom
+    width: 100%
+    display: flex    
+    border-top: 1px solid #ffffff 
+    margin-top: 24px
+    padding-top: 24px
+    align-items: center
+    
+.footer-logo    
+    @include pad
+        display: none
+
+.copyight
+    margin-left: 38px
+    @include pad
+        font-size: 16px
+        margin-left: 0
+
+.bottom-text
+    display: flex
+    margin-left: auto
+    justify-content: space-between
+    font-size: 14px
+    & p
+        margin-left: 38px
+        @include pad
+            margin-left: 24px

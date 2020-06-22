@@ -1,0 +1,28 @@
+@import 'variable.sass'
+@import 'mixin.sass'
+
+.header
+    background-color: $bg-primary
+    display: flex
+    justify-content: space-between
+    padding: 30px 88px
+
+    @include pad 
+        max-width: 100%
+        padding: 30px 48px
+
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+
+.menu-list    
+    margin-left: 60px
+    & a
+        color: #ffffff
+        font-size: 20px
+    @include pad 
+        margin-left: 40px
+
+

@@ -30,6 +30,11 @@
             "styles": [
               "src/styles.sass"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/sass"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -72,7 +77,12 @@
             "production": {
               "browserTarget": "hw-glasses:build:production"
             }
-          }
+          },
+          "stylePreprocessorOptions": {
+            "includePaths": [
+              "src/sass"
+            ]
+          },
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

@@ -1,0 +1,66 @@
+@import 'variable.sass'
+@import 'mixin.sass'
+
+.classic
+    padding: 64px
+    @include pad
+        padding: 40px 48px
+
+.classic-title
+    @include fontLarge( 48px )
+    text-align: center
+    margin-bottom: 60px
+    @include pad
+        @include fontLarge( 32px )
+        margin-bottom: 32px
+
+.container
+    width: 100%
+    max-width: 1140px
+    margin-right: auto
+    margin-left: auto
+    padding-right: 15px
+    padding-left: 15px    
+
+.product-box
+    display: flex
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
+    align-items: center
+    margin-bottom: 32px
+    @include pad
+        margin-bottom: 8px
+
+.row-reverse
+    flex-direction: row-reverse
+    @include pad
+        flex-direction: row
+    
+.product-pic
+    flex: 0 2 auto 
+    @include pad
+        max-width: 90%
+        flex: 0 0 59%
+
+.product-text
+    margin-left: 24px
+    
+.product-text, .product-text--left
+    display: flex
+    align-items: center
+    @include pad
+        margin: 0 auto
+        // text-align: right
+        // justify-content: center
+
+.product-text span, .product-text--left span
+    @include fontSec( 48px )
+    text-transform: uppercase
+    margin-left: 8px
+    margin-right: 24px 
+    font-style: italic
+    font-weight: bold
+    @include pad
+        @include fontSec( 28px )
+

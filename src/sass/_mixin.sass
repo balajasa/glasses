@@ -1,0 +1,39 @@
+@mixin pad
+    @media (max-width: 768px)
+        @content
+
+@mixin mobile
+    @media (max-width: 375px)
+        @content        
+    
+    
+@mixin fontLarge($size)    
+    font-size: $size
+    color: $text-primaey
+    font-family: PingFangTC-Medium, sans-serif
+
+@mixin fontMid($size)
+    font-size: $size
+    color: $text-primaey
+    font-family: PingFangTC-Semibold, sans-serif
+
+@mixin fontSmall($size)
+    font-size: $size
+    color: $text-primaey
+    font-family: PingFangTC-Medium, sans-serif
+
+@mixin fontExtraStrong($size)
+    font-size: $size
+    color: $text-primaey
+    font-family: PingFangTC-Medium, sans-serif
+
+@mixin fontSec($size)
+    font-size: $size
+    color: $text-secondary
+    font-family: Roboto
+    // font-weight: bold
+
+@mixin fonttext($size)
+    font-size: $size
+    color: #000000
+    font-family: PingFangTC-Regular, sans-serif
